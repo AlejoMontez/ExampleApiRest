@@ -7,11 +7,16 @@ const hostname = '127.0.0.1';
 //puerto para conectarse
 const PORT = process.env.PORT || 5000
 
-let users = ['oscar', 'juan', 'marcos', 'julieta', 'gabriel'];
+
 let books = [
     {titulo: 'El señor de los anillos', autor: 'J.R.R. Tolkien'},
     {titulo: "Cancion de hielo y fuego", autor: 'George RR Martin'}
 ];
+
+let users = [
+    {id: 1, name: 'oscar'},
+    {id: 2, name: 'juan'},
+    {id: 3, name: 'marcos'}
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
